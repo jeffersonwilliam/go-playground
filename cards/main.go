@@ -19,18 +19,16 @@ Append function does not modify the original slice, it returns a new slice
 */
 package main
 
-import "fmt"
-
 func main() {
-	cards := []string {"Ace of Diamonds", newCard()}
+	// cards := []string {"Ace of Diamonds", newCard()}
+	cards := deck{"Ace of Diamonds", newCard()}
 	cards = append(cards, "Six of Spades")
 
-	fmt.Println(cards)
+	// fmt.Println(cards)
+	deck.print(cards)
+	// cards.print()
 
-	//How to loop through a slice
-	for i, card := range cards { 
-		fmt.Println(i, card)
-	}
+	// receiver sets up methods on variables that we create
 }
 
 func newCard() string {
