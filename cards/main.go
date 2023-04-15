@@ -2,7 +2,7 @@
 ***
 
 Go CLI:
-1. go build - Compiles a bunch of go source code fikes
+1. go build - Compiles a bunch of go source code files
 2. go run - Compiles and executes one or two files
 3. go fmt - Formats all the code in each file in the current directory
 4. go install - Compiles and installs a package
@@ -26,8 +26,8 @@ func main() {
 	cards = append(cards, "Six of Spades")
 
 	// fmt.Println(cards)
-	deck.print(cards)
-	// cards.print()
+	// deck.print(cards)
+	cards.print()
 
 	// receiver sets up methods on variables that we create
 }
