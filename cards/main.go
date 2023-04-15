@@ -18,6 +18,7 @@ Append function does not modify the original slice, it returns a new slice
 **
 */
 package main
+// import "fmt"
 
 func main() {
 	// cards := []string {"Ace of Diamonds", newCard()}
